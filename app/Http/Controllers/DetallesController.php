@@ -34,13 +34,6 @@ class DetallesController extends Controller
                 $imagen->store('public/fotos');  
             }
 
-        $imagen_2 = $request->file('imagen_2');
-        if ($imagen_2) {
-            $nuevoPersonaje->imagen_2 = $imagen_2->hashName();
-            $imagen_2->store('public/fotos');  
-        }
-        $nuevoPersonaje->save();
-        return redirect()->route('detalles.index');
     }
 
 
@@ -66,16 +59,11 @@ class DetallesController extends Controller
                 $imagen->store('public/fotos');  
             }
 
-        $imagen_2 = $request->file('imagen_2');
-        if ($imagen_2) {
-            $animes->imagen_2 = $imagen_2->hashName();
-            $imagen_2->store('public/fotos');  
-        }
+
         $animes->save();
         return redirect()->route('detalles.index', $id);
     }
 
-    //Eliminar
     public function delete($id) {
         $animes = Personaje::find($id);
         $argumentos['anime'] = $animes;
@@ -83,7 +71,7 @@ class DetallesController extends Controller
     }
 
     public function destroy(Request $request, $id) {
-        error_log("HOHO");
+        error_log("fallo");
         $animes = Personaje::find($id);
         $animes->delete();
         return redirect()->route('detalles.index');
