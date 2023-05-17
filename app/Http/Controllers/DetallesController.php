@@ -14,7 +14,7 @@ class DetallesController extends Controller
         return view("index", $argumentos);
     }
 
-    //CREAR PERSONAJES
+    //Crear anime
     public function create() {
         $argumentos = array(); 
         return view('añadir', $argumentos);
@@ -24,7 +24,7 @@ class DetallesController extends Controller
         $nuevoPersonaje = new Personaje();
         $nuevoPersonaje->nombre = $request->input('nombre');
         $nuevoPersonaje->genero = $request->input('genero');
-        $nuevoPersonaje->edad = $request->input('edad');
+        $nuevoPersonaje->capitulos = $request->input('capitulos');
         $nuevoPersonaje->descripcion = $request->input('descripcion');
 
 
@@ -43,7 +43,7 @@ class DetallesController extends Controller
         return redirect()->route('detalles.index');
     }
 
-    //EDITAR
+
     public function edit($id) {
         $animes = Personaje::find($id);
         $argumentos['animes'] = $animes;
@@ -55,7 +55,7 @@ class DetallesController extends Controller
         $animes = Personaje::find($id);
         $animes->nombre = $request->input('nombre');
         $animes->genero = $request->input('genero');
-        $animes->edad = $request->input('edad');
+        $animes->capitulos = $request->input('capitulos');
 
         $animes->descripcion = $request->input('descripcion');
 

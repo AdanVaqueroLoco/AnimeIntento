@@ -54,8 +54,8 @@
                         <div class="bg-success rounded-circle border border-2 border-white position-absolute end-0 bottom-0 p-1"></div>
                     </div>
                     <div class="ms-3">
-                        <h6 class="mb-0">Idalia Padilla</h6>
-                        <span>Admin</span>
+                        <h6 class="mb-0">Erik Pereo</h6>
+                        <span>Master</span>
                     </div>
                 </div>
                 <div class="navbar-nav w-100">
@@ -82,7 +82,7 @@
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
                             <img class="rounded-circle me-lg-2" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
-                            <span class="d-none d-lg-inline-flex">Idalia Padilla</span>
+                            <span class="d-none d-lg-inline-flex">Erik Pereo</span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-end bg-secondary border-0 rounded-0 rounded-bottom m-0">
                             <a href="#" class="dropdown-item">Log Out</a>
@@ -92,12 +92,12 @@
             </nav>
             <!-- Navbar End -->
 
-            <!-- Recent Sales Start -->
+
             <div class="container-fluid pt-4 px-4">
                 <div class="bg-secondary text-center rounded p-4">
                     <div class="d-flex align-items-center justify-content-between mb-4">
-                        <h6 class="mb-0">Recent Salse</h6>
-                        <a href="">Show All</a>
+                        <h6 class="mb-0">Listado de Animes:</h6>
+                        <a href="">Mostrar todos</a>
                     </div>
                     <div class="table-responsive">
                         <table class="table text-start align-middle table-bordered table-hover mb-0">
@@ -110,8 +110,7 @@
 
                                     <th scope="col">Descripción</th>
 
-                                    <th scope="col">Rostro</th>
-                                    <th scope="col">Cuerpo Completo</th>
+                                    <th scope="col">Imagen</th>
                                     <th scope="col">Editar</th>
                                     <th scope="col">Eliminar</th>
                                 </tr>
@@ -144,22 +143,10 @@
                     </div>
                 </div>
             </div>
-            <!-- Recent Sales End -->
+
 
             <!-- Footer Start -->
-            <div class="container-fluid pt-4 px-4">
-                <div class="bg-secondary rounded-top p-4">
-                    <div class="row">
-                        <div class="col-12 col-sm-6 text-center text-sm-start">
-                            &copy; <a href="#">Parcial 3</a>, Gráficos Avanzados 
-                        </div>
-                        <div class="col-12 col-sm-6 text-center text-sm-end">
-                            <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                            Integrantes: <a href="">Daney Arvayo, César Escobedo, Idalia Padilla</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
             <!-- Footer End -->
         </div>
         <!-- Content End -->

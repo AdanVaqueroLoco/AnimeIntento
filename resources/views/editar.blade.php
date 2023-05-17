@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Admin-Editar-Personaje</title>
+    <title>Admin-Editar-Anime</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -48,8 +48,8 @@
                         <div class="bg-success rounded-circle border border-2 border-white position-absolute end-0 bottom-0 p-1"></div>
                     </div>
                     <div class="ms-3">
-                        <h6 class="mb-0">Idalia Padilla</h6>
-                        <span>Admin</span>
+                        <h6 class="mb-0">Erik Pereo</h6>
+                        <span>Master</span>
                     </div>
                 </div>
                 <div class="navbar-nav w-100">
@@ -76,7 +76,7 @@
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
                             <img class="rounded-circle me-lg-2" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
-                            <span class="d-none d-lg-inline-flex">Idalia Padilla</span>
+                            <span class="d-none d-lg-inline-flex">Erik Pereo</span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-end bg-secondary border-0 rounded-0 rounded-bottom m-0">
                             <a href="#" class="dropdown-item">Log Out</a>
@@ -121,12 +121,8 @@
                                 </div>
 
                                 <div class="mb-3">
-                                    <label for="formFileSm" class="form-label">Imagen Rostro</label>
+                                    <label for="formFileSm" class="form-label">Imagen anime</label>
                                     <input class="form-control form-control-sm bg-dark" name="imagen" type="file">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="formFileSm" class="form-label">Imagen Cuerpo Completo</label>
-                                    <input class="form-control form-control-sm bg-dark" name="imagen_2" type="file">
                                 </div>
                                 <button type="submit" class="btn btn-primary" type="submit">Actualizar</button>
                             </form>
@@ -136,19 +132,7 @@
             </div>
 
             <!-- Footer Start -->
-            <div class="container-fluid pt-4 px-4">
-                <div class="bg-secondary rounded-top p-4">
-                    <div class="row">
-                        <div class="col-12 col-sm-6 text-center text-sm-start">
-                            &copy; <a href="#">Parcial 3</a>, Gráficos Avanzados 
-                        </div>
-                        <div class="col-12 col-sm-6 text-center text-sm-end">
-                            <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                            Integrantes: <a href="">Daney Arvayo, César Escobedo, Idalia Padilla</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
             <!-- Footer End -->
         </div>
         <!-- Content End -->
