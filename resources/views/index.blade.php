@@ -85,20 +85,20 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                @foreach ($detalles as $detalle)
+                                @foreach ($cosas as $cosa)
                                 <tr>
                                     
-                                    <td>{{$detalle->id}}</td>
-                                    <td>{{$detalle->nombre}}</td>
-                                    <td>{{$detalle->genero}}</td>
-                                    <td>{{$detalle->capitulos}}</td>
-                                    <td>{{$detalle->temporadas}}</td>
-                                    <td>{{$detalle->descripcion}}</td>
+                                    <td>{{$cosa->id}}</td>
+                                    <td>{{$cosa->nombre}}</td>
+                                    <td>{{$cosa->genero}}</td>
+                                    <td>{{$cosa->capitulos}}</td>
+                                    <td>{{$cosa->temporadas}}</td>
+                                    <td>{{$cosa->descripcion}}</td>
                                     
-                                    <td><img style="width: 100px; height: 10" src="/storage/fotos/{{$detalle->imagen}}" class="card-img-top" alt=""></td>
-                                    <td><a class="btn btn-sm btn-primary" href="{{route('animes.edit', $detalle->id)}}">Editar</a></td>
+                                    <td><img style="width: 100px; height: 10" src="/storage/fotos/{{$cosa->imagen}}" class="card-img-top" alt=""></td>
+                                    <td><a class="btn btn-sm btn-primary" href="{{route('animes.edit', $cosa->id)}}">Editar</a></td>
                                     <td>                                    
-                                        <form action="{{route('animes.destroy', $detalle->id)}}" method="POST">
+                                        <form action="{{route('animes.destroy', $cosa->id)}}" method="POST">
                                             @csrf
                                             @method('delete')
                                                 <button class="btn btn-sm btn-primary" href="" type="submit">Eliminar</button>

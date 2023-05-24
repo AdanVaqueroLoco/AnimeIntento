@@ -5,11 +5,11 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Personaje;
 
-class DetallesController extends Controller
+class CosasController extends Controller
 {
     public function index() {
-        $detalles = Personaje::all();
-        $argumentos['detalles'] = $detalles;
+        $cosas = Personaje::all();
+        $argumentos['cosas'] = $cosas;
 
         return view("index", $argumentos);
     }
@@ -62,7 +62,7 @@ class DetallesController extends Controller
 
 
         $animes->save();
-        return redirect()->route('detalles.index', $id);
+        return redirect()->route('cosas.index', $id);
     }
 
     public function delete($id) {
@@ -75,6 +75,6 @@ class DetallesController extends Controller
         error_log("fallo");
         $animes = Personaje::find($id);
         $animes->delete();
-        return redirect()->route('detalles.index');
+        return redirect()->route('cosas.index');
     }
 }

@@ -2,10 +2,9 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-
 use App\Http\Controllers\API\FocoController;
 use App\Http\Controllers\API\PersonajesController;
-use App\Http\Controllers\API\DetallesController;
+use App\Http\Controllers\API\CosasController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,8 +20,5 @@ use App\Http\Controllers\API\DetallesController;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
-
-//Route::get('foco',[FocoController::class,'index'])->name('api.foco.index');
-
 Route::get('anime',[PersonajesController::class,'index'])->name('api.anime.index');
-Route::get('detalle',[DetallesController::class,'index'])->name('api.detalle.index');
+Route::get('cosa',[CosasController::class,'index'])->name('api.cosa.index');

@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\DetallesController;
+use App\Http\Controllers\CosasController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,10 +18,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/index', [DetallesController::class, 'index'])->name('detalles.index');
-Route::get('/agregar', [DetallesController::class, 'create'])->name('agregar.index');
-Route::post('/animes', [DetallesController::class, 'store'])->name('animes.store');
-Route::get('/animes/{id}/edit', [DetallesController::class, 'edit'])->name('animes.edit');
-Route::put('/animes/{id}', [DetallesController::class, 'update'])->name(('animes.update'));
-Route::get('/animes/{id}/delete', [DetallesController::class, 'delete'])->name('animes.delete');
-Route::delete('/animes/{id}', [DetallesController::class, 'destroy'])->name('animes.destroy');
+Route::get('/index', [CosasController::class, 'index'])->name('cosas.index');
+Route::get('/agregar', [CosasController::class, 'create'])->name('agregar.index');
+Route::post('/animes', [CosasController::class, 'store'])->name('animes.store');
+Route::get('/animes/{id}/edit', [CosasController::class, 'edit'])->name('animes.edit');
+Route::put('/animes/{id}', [CosasController::class, 'update'])->name(('animes.update'));
+Route::get('/animes/{id}/delete', [CosasController::class, 'delete'])->name('animes.delete');
+Route::delete('/animes/{id}', [CosasController::class, 'destroy'])->name('animes.destroy');
