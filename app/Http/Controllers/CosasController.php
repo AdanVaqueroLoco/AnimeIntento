@@ -3,12 +3,12 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Personaje;
+use App\Models\Serie;
 
 class CosasController extends Controller
 {
     public function index() {
-        $cosas = Personaje::all();
+        $cosas = Serie::all();
         $argumentos['cosas'] = $cosas;
 
         return view("index", $argumentos);
@@ -21,17 +21,17 @@ class CosasController extends Controller
     }
 
     public function store(Request $request) {
-        $nuevoPersonaje = new Personaje();
-        $nuevoPersonaje->nombre = $request->input('nombre');
-        $nuevoPersonaje->genero = $request->input('genero');
-        $nuevoPersonaje->capitulos = $request->input('capitulos');
-        $nuevoPersonaje->descripcion = $request->input('descripcion');
-        $nuevoPersonaje->temporadas = $request->input('temporadas');
+        $nuevoSerie = new Serie();
+        $nuevoSerie->nombre = $request->input('nombre');
+        $nuevoSerie->genero = $request->input('genero');
+        $nuevoSerie->capitulos = $request->input('capitulos');
+        $nuevoSerie->descripcion = $request->input('descripcion');
+        $nuevoSerie->temporadas = $request->input('temporadas');
 
 
         $imagen = $request->file('imagen');
             if ($imagen) {
-                $nuevoPersonaje->imagen = $imagen->hashName();
+                $nuevoSerie->imagen = $imagen->hashName();
                 $imagen->store('public/fotos');  
             }
 
@@ -39,14 +39,14 @@ class CosasController extends Controller
 
 
     public function edit($id) {
-        $animes = Personaje::find($id);
+        $animes = Serie::find($id);
         $argumentos['animes'] = $animes;
 
         return view('editar', $argumentos);
     } 
 
     public function update(Request $request, $id) {
-        $animes = Personaje::find($id);
+        $animes = Serie::find($id);
         $animes->nombre = $request->input('nombre');
         $animes->genero = $request->input('genero');
         $animes->capitulos = $request->input('capitulos');
@@ -66,14 +66,14 @@ class CosasController extends Controller
     }
 
     public function delete($id) {
-        $animes = Personaje::find($id);
+        $animes = Serie::find($id);
         $argumentos['anime'] = $animes;
         return view('animes.delete', $argumentos);
     }
 
     public function destroy(Request $request, $id) {
         error_log("fallo");
-        $animes = Personaje::find($id);
+        $animes = Serie::find($id);
         $animes->delete();
         return redirect()->route('cosas.index');
     }

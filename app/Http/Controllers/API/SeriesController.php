@@ -5,12 +5,12 @@ namespace App\Http\Controllers\API;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-use App\Models\Personaje;
+use App\Models\Serie;
 
-class PersonajesController extends Controller
+class SeriesController extends Controller
 {
     public function index() {
-        $animes = Personaje::all();
+        $animes = Serie::all();
 
         return $animes;
     }

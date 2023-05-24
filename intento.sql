@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 24, 2023 at 08:55 PM
+-- Generation Time: May 24, 2023 at 09:35 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -24,10 +24,10 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `personajes`
+-- Table structure for table `series`
 --
 
-CREATE TABLE `personajes` (
+CREATE TABLE `series` (
   `id` int(11) NOT NULL,
   `nombre` varchar(255) DEFAULT NULL,
   `genero` varchar(255) DEFAULT NULL,
@@ -40,11 +40,11 @@ CREATE TABLE `personajes` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
--- Dumping data for table `personajes`
+-- Dumping data for table `series`
 --
 
-INSERT INTO `personajes` (`id`, `nombre`, `genero`, `imagen`, `temporadas`, `capitulos`, `descripcion`, `created_at`, `updated_at`) VALUES
-(1, 'Dragon Ball Z', 'Acción', 'rvHcSM4hU1tbMnC4eXypjY0UFzOWV6Sy8OzkkC1L.webp', '5 temporadas', '291 capitulos', 'Se deben de recolectar las esferas del Dragón para pedir un deseo.', '2023-05-12 09:10:00', '2023-05-25 01:52:39'),
+INSERT INTO `series` (`id`, `nombre`, `genero`, `imagen`, `temporadas`, `capitulos`, `descripcion`, `created_at`, `updated_at`) VALUES
+(1, 'Dragon Ball Z', 'Acción', 'rvHcSM4hU1tbMnC4eXypjY0UFzOWV6Sy8OzkkC1L.webp', '5 tem6 temporadasporadas', '291 capitulos', 'Se deben de recolectar las esferas del Dragón para pedir un deseo.', '2023-05-12 09:10:00', '2023-05-25 02:23:48'),
 (2, 'Death Note', 'Drama', 'lOs9NiVYMTaRfJDqMfIAXWRm53nyRbz9OejSo3pA.jpg', '2 temporadas', '37 capitulos', 'Light Yagami es un joven estudiante que un día encuentra un cuaderno llamado Death Note que tiene una macabra propiedad: si el nombre de una persona aparece escrito en él, morirá.', '2023-05-15 09:10:00', '2023-05-25 01:52:47'),
 (3, 'Chainsaw Man', 'Accion', '72uQyo6V0gxcWIrv5NiTp8NblFutupEIIQH72zO9.webp', '1 temporada', '12 capitulos', '\'Chainsaw Man\' es la historia de Denji, un adolescente que carga con las inmensas deudas de su padre y que malvive como puede para saldarlas, ya sea vendiendo sus órganos o haciendo todo tipo de trabajos malpagados.', '2023-05-15 09:10:00', '2023-05-25 01:52:56'),
 (4, 'My Hero Academia', 'Acción', 'pRPJxDz7LmPwtUApytIqMklmfbMmynTdMLStnksX.webp', '6 temporadas', '138 capitulos', 'My Hero Academia es una serie de anime realizada por el estudio BONES basada en el manga homónimo creado por Kohei Horihoshi acerca de un grupo de estudiantes que se preparan para ser superhéroes.', '2023-05-15 09:10:00', '2023-05-25 01:53:08'),
@@ -58,9 +58,9 @@ INSERT INTO `personajes` (`id`, `nombre`, `genero`, `imagen`, `temporadas`, `cap
 --
 
 --
--- Indexes for table `personajes`
+-- Indexes for table `series`
 --
-ALTER TABLE `personajes`
+ALTER TABLE `series`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -68,9 +68,9 @@ ALTER TABLE `personajes`
 --
 
 --
--- AUTO_INCREMENT for table `personajes`
+-- AUTO_INCREMENT for table `series`
 --
-ALTER TABLE `personajes`
+ALTER TABLE `series`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 COMMIT;
 
