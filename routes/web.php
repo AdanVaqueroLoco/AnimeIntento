@@ -19,7 +19,7 @@ Route::get('/', function () {
 });
 
 Route::get('/index', [DetallesController::class, 'index'])->name('detalles.index');
-Route::get('/añadir', [DetallesController::class, 'create'])->name('añadir.index');
+Route::get('/agregar', [DetallesController::class, 'create'])->name('agregar.index');
 Route::post('/animes', [DetallesController::class, 'store'])->name('animes.store');
 Route::get('/animes/{id}/edit', [DetallesController::class, 'edit'])->name('animes.edit');
 Route::put('/animes/{id}', [DetallesController::class, 'update'])->name(('animes.update'));

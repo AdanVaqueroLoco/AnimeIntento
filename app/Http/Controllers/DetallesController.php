@@ -17,7 +17,7 @@ class DetallesController extends Controller
     //Crear anime
     public function create() {
         $argumentos = array(); 
-        return view('añadir', $argumentos);
+        return view('agregar', $argumentos);
     }
 
     public function store(Request $request) {

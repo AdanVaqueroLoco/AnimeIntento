@@ -56,7 +56,7 @@
                         </a>
                         <div class="dropdown-menu dropdown-menu-end bg-secondary border-0 rounded-0 rounded-bottom m-0">
                             <a href="/index" class="dropdown-item"><i class="fa fa-tachometer-alt me-2"></i>Información</a>
-                            <a href="/añadir" class="dropdown-item"><i class="fa fa-table me-2"></i>Añadir</a>
+                            <a href="/agregar" class="dropdown-item"><i class="fa fa-table me-2"></i>Agregar</a>
                             <a href="#" class="dropdown-item">Salir</a>
                         </div>
                     </div>
@@ -69,7 +69,7 @@
                     <form action="{{route('animes.store')}}" method="POST" enctype="multipart/form-data">
                         @csrf
                         <div class="bg-secondary rounded h-100 p-4">
-                            <h6 class="mb-4">Añadir Anime</h6>
+                            <h6 class="mb-4">Agregar Anime</h6>
                             <form>
                                 <div class="row mb-3">
                                     <label for="" class="col-sm-2 col-form-label">Nombre</label>

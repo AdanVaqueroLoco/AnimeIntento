@@ -54,7 +54,7 @@
                         </a>
                         <div class="dropdown-menu dropdown-menu-end bg-secondary border-0 rounded-0 rounded-bottom m-0">
                             <a href="/index" class="dropdown-item"><i class="fa fa-tachometer-alt me-2"></i>Información</a>
-                            <a href="/añadir" class="dropdown-item"><i class="fa fa-table me-2"></i>Añadir</a>
+                            <a href="/agregar" class="dropdown-item"><i class="fa fa-table me-2"></i>Agregar</a>
                             <a href="#" class="dropdown-item">Salir</a>
                         </div>
                     </div>
