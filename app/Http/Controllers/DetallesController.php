@@ -26,6 +26,7 @@ class DetallesController extends Controller
         $nuevoPersonaje->genero = $request->input('genero');
         $nuevoPersonaje->capitulos = $request->input('capitulos');
         $nuevoPersonaje->descripcion = $request->input('descripcion');
+        $nuevoPersonaje->temporadas = $request->input('temporadas');
 
 
         $imagen = $request->file('imagen');
@@ -49,8 +50,8 @@ class DetallesController extends Controller
         $animes->nombre = $request->input('nombre');
         $animes->genero = $request->input('genero');
         $animes->capitulos = $request->input('capitulos');
-
         $animes->descripcion = $request->input('descripcion');
+        $animes->temporadas = $request->input('temporadas');
 
 
         $imagen = $request->file('imagen');

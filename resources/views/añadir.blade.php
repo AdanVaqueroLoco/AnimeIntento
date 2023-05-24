@@ -46,9 +46,7 @@
                 <a href="index.html" class="navbar-brand d-flex d-lg-none me-4">
                     <h2 class="text-primary mb-0"><i class="fa fa-user-edit"></i></h2>
                 </a>
-                <a href="#" class="sidebar-toggler flex-shrink-0">
-                    <i class="fa fa-bars"></i>
-                </a>
+
                 <div class="navbar-nav align-items-center ms-auto">
                     
                     <div class="nav-item dropdown">
@@ -91,6 +89,14 @@
                                         <input name="capitulos" type="text" class="form-control">
                                     </div>
                                 </div>
+
+                                <div class="row mb-3">
+                                    <label class="col-sm-2 col-form-label">Temporadas</label>
+                                    <div class="col-sm-1">
+                                        <input name="temporadas" type="text" class="form-control">
+                                    </div>
+                                </div>
+
 
                                 <div class="row mb-3">
                                     <label class="col-sm-2 col-form-label">descripcion</label>

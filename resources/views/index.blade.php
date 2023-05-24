@@ -44,9 +44,7 @@
                 <a href="index.html" class="navbar-brand d-flex d-lg-none me-4">
                     <h2 class="text-primary mb-0"><i class="fa fa-user-edit"></i></h2>
                 </a>
-                <a href="#" class="sidebar-toggler flex-shrink-0">
-                    <i class="fa fa-bars"></i>
-                </a>
+
                 <div class="navbar-nav align-items-center ms-auto">
                     
                     <div class="nav-item dropdown">
@@ -79,6 +77,7 @@
                                     <th scope="col">Nombre</th>
                                     <th scope="col">Genero</th>
                                     <th scope="col">Capítulos</th>
+                                    <th scope="col">Temporadas</th>
                                     <th scope="col">Descripción</th>
                                     <th scope="col">Imagen</th>
                                     <th scope="col">Editar</th>
@@ -93,7 +92,9 @@
                                     <td>{{$detalle->nombre}}</td>
                                     <td>{{$detalle->genero}}</td>
                                     <td>{{$detalle->capitulos}}</td>
+                                    <td>{{$detalle->temporadas}}</td>
                                     <td>{{$detalle->descripcion}}</td>
+                                    
                                     <td><img style="width: 100px; height: 10" src="/storage/fotos/{{$detalle->imagen}}" class="card-img-top" alt=""></td>
                                     <td><a class="btn btn-sm btn-primary" href="{{route('animes.edit', $detalle->id)}}">Editar</a></td>
                                     <td>                                    
