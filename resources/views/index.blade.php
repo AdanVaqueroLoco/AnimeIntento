@@ -33,38 +33,8 @@
 
 <body>
     <div class="container-fluid position-relative d-flex p-0">
-        <!-- Spinner Start -->
-        <div id="spinner" class="show bg-dark position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-                <span class="sr-only">Cargando...</span>
-            </div>
-        </div>
-        <!-- Spinner End -->
 
 
-        <!-- Sidebar Start -->
-        <div class="sidebar pe-4 pb-3">
-            <nav class="navbar bg-secondary navbar-dark">
-                <a href="index.html" class="navbar-brand mx-4 mb-3">
-                    <h3 class="text-primary"><i class="fa fa-user-edit me-2"></i>Animeclub</h3>
-                </a>
-                <div class="d-flex align-items-center ms-4 mb-4">
-                    <div class="position-relative">
-                        
-                        <div class="bg-success rounded-circle border border-2 border-white position-absolute end-0 bottom-0 p-1"></div>
-                    </div>
-                    <div class="ms-3">
-                        <h6 class="mb-0">Erik Pereo</h6>
-                        <span>Master</span>
-                    </div>
-                </div>
-                <div class="navbar-nav w-100">
-                    <a href="/index" class="nav-item nav-link active"><i class="fa fa-tachometer-alt me-2"></i>Información</a>
-                    <a href="/añadir" class="nav-item nav-link"><i class="fa fa-table me-2"></i>Añadir</a>
-                </div>
-            </nav>
-        </div>
-        <!-- Sidebar End -->
 
 
         <!-- Content Start -->
@@ -86,8 +56,8 @@
                         </a>
                         <div class="dropdown-menu dropdown-menu-end bg-secondary border-0 rounded-0 rounded-bottom m-0">
                             <a href="/index" class="dropdown-item"><i class="fa fa-tachometer-alt me-2"></i>Información</a>
-                            <a href="/añadir" class="nav-item nav-link"><i class="fa fa-table me-2"></i>Añadir</a>
-                            <a href="#" class="dropdown-item">Log Out</a>
+                            <a href="/añadir" class="dropdown-item"><i class="fa fa-table me-2"></i>Añadir</a>
+                            <a href="#" class="dropdown-item">Salir</a>
                         </div>
                     </div>
                 </div>
@@ -109,9 +79,7 @@
                                     <th scope="col">Nombre</th>
                                     <th scope="col">Genero</th>
                                     <th scope="col">Capítulos</th>
-
                                     <th scope="col">Descripción</th>
-
                                     <th scope="col">Imagen</th>
                                     <th scope="col">Editar</th>
                                     <th scope="col">Eliminar</th>
@@ -125,11 +93,8 @@
                                     <td>{{$detalle->nombre}}</td>
                                     <td>{{$detalle->genero}}</td>
                                     <td>{{$detalle->capitulos}}</td>
-
                                     <td>{{$detalle->descripcion}}</td>
-
                                     <td><img style="width: 100px; height: 10" src="/storage/fotos/{{$detalle->imagen}}" class="card-img-top" alt=""></td>
-
                                     <td><a class="btn btn-sm btn-primary" href="{{route('animes.edit', $detalle->id)}}">Editar</a></td>
                                     <td>                                    
                                         <form action="{{route('animes.destroy', $detalle->id)}}" method="POST">
